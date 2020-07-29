@@ -11,6 +11,8 @@
 
     <modules>
         <module>eureka-server</module>
+        <module>order-server</module>
+        <module>stock-server</module>
     </modules>
 
     <parent>

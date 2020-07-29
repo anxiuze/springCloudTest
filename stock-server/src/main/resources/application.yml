@@ -1,0 +1,15 @@
+server:
+  port: 8002
+
+spring:
+  application:
+    name: stock-server
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:7002/eureka    #单机
+
+  instance:
+    instance-id: stock-server8002
+    prefer-ip-address: true

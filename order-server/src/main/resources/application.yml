@@ -1,0 +1,25 @@
+server:
+  port: 8001
+
+spring:
+  application:
+    name: order-server
+
+eureka:
+  client:
+    #客户端注册进eureka服务列表内
+    service-url:
+      defaultZone: http://localhost:7002/eureka    #单机
+
+      #Eureka集群
+      #defaultZone: http://eureka7002.com:7002/eureka/,http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/
+#      defaultZone: http://eureka7002.com:7002/eureka/
+  instance:
+    instance-id: order-server8001
+    #访问路径可以显示IP地址
+    prefer-ip-address: true
+
+#在Eureka页面访问info返回的信息的配置
+info:
+  app.name: order-server8001
+  company.name: www.anxiuze.com
