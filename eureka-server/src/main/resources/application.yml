@@ -15,5 +15,8 @@ eureka:
       #Eureka高复用时设置其他的Eureka之间通信
       #defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/
       defaultZone: http://eureka7003.com:7003/eureka/,http://eureka7004.com:7004/eureka/
-      #server:
-      #enable-self-preservation: false   #Eureka服务端关闭心跳连接测试
+   #通过在 Eureka Server 配置如下参数，开启或者关闭保护机制，生产环境建议打开：
+  server:
+    enable-self-preservation: true
+    #server:
+    #enable-self-preservation: false   #Eureka服务端关闭心跳连接测试
